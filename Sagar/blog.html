@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>my blog</h2>
+
+      <div class="right-side">
+
+      </div>
+      <p>Post your Blog</p>
+      <form id="form">
+        <input type="text" placeholder="TItle" id="title" />
+
+        <input type="text" placeholder="Details" id="details" />
+        <label for="image">
+          <img
+            src="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/128/Downloads-icon.png" height="50px" width="50px"
+          />
+        </label>
+        <div id="drag_area" class="drag_area">Drop your image here
+          
+        </div>
+        <input type="file" id="image" onchange="onChange(event)" />
+        <input type="submit" value="Upload" id="submitBtn" />
+
+      </form>
+    </div>
+  </div>
+    <!-- JS -->
+
+    <!-- JS -->
+    <div class="right-side">
+    <div class="box" id="box"></div>
+
+    <script src="blog.js" type="text/javascript"></script>
+  </body>
+</html>
