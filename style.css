@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+.openBtn {
+  display: flex;
+  justify-content: right;
+}
+.cbutton {
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  padding: 5px 25px;
+  cursor: pointer;
+  max-width: 100px;
+}
+.ebutton {
+  border: none;
+  border-radius: 5px;
+  background-color: burlywood;
+  color: white;
+  padding: 5px 25px;
+  cursor: pointer;
+  max-width: 100px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.blog {
+  display: flex;
+}
+.formContainer {
+  margin-top: 25px;
+  max-width: 300px;
+  padding: 20px;
+  background-color: burlywood;
+}
+.formContainer input[type="text"],
+.formContainer input[type="file"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #eee;
+}
+.formContainer input[type="text"]:focus,
+.formContainer input[type="file"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #8ebf42;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+.formContainer .cancel {
+  background-color: #cc0000;
+}
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: left;
+  margin: auto;
+  flex-wrap: wrap;
+  max-width: 1238px;
+}
+.card {
+  border-radius: 10px;
+  background: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(65, 62, 62, 0.2);
+  padding: 20px;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.card_title {
+  font-weight: 400;
+}
+
+.card_description {
+  font-weight: 200;
+}
