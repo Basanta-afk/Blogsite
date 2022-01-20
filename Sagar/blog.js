@@ -78,10 +78,11 @@ submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   let image;
   let arr = JSON.parse(localStorage.getItem("blogdata"));
-  if (title != 0 && details != 0 && displayImage) {
+  
     let title = document.querySelector("#title").value;
     let details = document.querySelector("#details").value;
 
+    if (title && details) {
     let arrData = {
       title: title,
       timestamp: Date(),
